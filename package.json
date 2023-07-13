@@ -1,5 +1,6 @@
 {
 	"type": "module",
+	"version": "0.0.1",
 	"name": "fchughes.com",
 	"private": true,
 	"scripts": {
