@@ -13,22 +13,20 @@
 				? document.documentElement.setAttribute('color-scheme', theme)
 				: localStorage.setItem('color-scheme', 'dark')
 		</script>
-		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout-894ec1ce.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/_page-5c59e260.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/start-c6b60786.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-178364ec.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-d6ee89ac.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-d05497d0.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/control-654b50f6.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-725183a9.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/config-525fb511.js">
-		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-d5f2fb42.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-b5f816dd.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_slug_/_page.svelte-26f7c99f.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/utils-9a66bb98.js">
-		<link rel="modulepreload" href="./_app/immutable/modules/pages/_slug_/_page.ts-373557c2.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_page-e06a6dc5.js"><title>Second</title><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="Second"><!-- HEAD_svelte-ylbs26_END -->
+		
+		<link href="./_app/immutable/assets/0.cc838a98.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/3.5c59e260.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.6f2b2b6d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.da3d1cc8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.3d012bd8.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.a0eae2a6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/control.f5b05b5f.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.695c8f99.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.cf010ec4.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.ca3eba9f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/config.525fb511.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.74de0e2b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/utils.9a66bb98.js"><title>Second</title><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="Second"><!-- HEAD_svelte-ylbs26_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -63,22 +61,31 @@
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="rqr1zy">
-			import { start } from "./_app/immutable/start-c6b60786.js";
+			
+			<script>
+				{
+					__sveltekit_1t43hud = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-			start({
-				assets: "",
-				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="rqr1zy"]').parentNode,
-				version: "1689289705488",
-				hydrate: {
-					node_ids: [0, 3],
-					data: [null,null],
-					form: null,
-					error: null
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.6f2b2b6d.js"),
+						import("./_app/immutable/entry/app.695c8f99.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 	</body>
 </html>
