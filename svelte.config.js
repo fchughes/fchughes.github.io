@@ -1,5 +1,6 @@
 // import adapter from '@sveltejs/adapter-vercel'
 import adapter from "@sveltejs/adapter-static";
+import path from 'path';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 import { mdsvex, escapeSvelte } from "mdsvex";
@@ -11,7 +12,7 @@ import rehypeSlug from "rehype-slug";
 const mdsvexOptions = {
   extensions: [".md"],
   layout: {
-    _: "/Users/outre/Code/fchughes.github.io/src/mdsvex.svelte",
+    _:  path.resolve("./src/mdsvex.svelte"),
   },
   highlight: {
     highlighter: async (code, lang = "text") => {
