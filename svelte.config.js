@@ -1,10 +1,9 @@
 // import adapter from '@sveltejs/adapter-vercel'
 import adapter from "@sveltejs/adapter-static";
-import { vitePreprocess } from "@sveltejs/kit/vite";
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 import { mdsvex, escapeSvelte } from "mdsvex";
-import shiki from "shiki";
-import remarkUnwrapImages from "remark-unwrap-images";
+import { createHighlighter } from "shiki";
 import remarkToc from "remark-toc";
 import rehypeSlug from "rehype-slug";
 
@@ -12,16 +11,22 @@ import rehypeSlug from "rehype-slug";
 const mdsvexOptions = {
   extensions: [".md"],
   layout: {
-    _: "./src/mdsvex.svelte",
+    _: "/Users/outre/Code/fchughes.github.io/src/mdsvex.svelte",
   },
   highlight: {
     highlighter: async (code, lang = "text") => {
-      const highlighter = await shiki.getHighlighter({ theme: "poimandres" });
-      const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+      const highlighter = await createHighlighter({ 
+        themes: ["poimandres"],
+        langs: [lang]
+      });
+      const html = escapeSvelte(highlighter.codeToHtml(code, { 
+        lang,
+        theme: "poimandres"
+      }));
       return `{@html \`${html}\` }`;
     },
   },
-  remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
+  remarkPlugins: [[remarkToc, { tight: true }]],
   rehypePlugins: [rehypeSlug],
 };
 
