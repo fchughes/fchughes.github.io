@@ -1,19 +1,10 @@
 ---
-title: Hola
+title: Welcome
 description: First post.
-date: '2023-7-13'
-categories:
-  - sveltekit
-  - svelte
+date: '2025-9-4'
 published: true
 ---
 
-## Markdown
+![mostbooks](mostbooks.png)
 
-Hey friends! 👋
-
-```ts
-function hola(name: string) {
-	console.log(`Hola ${name}! 👋`)
-}
-```
+Welcome to my blog.

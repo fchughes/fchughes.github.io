@@ -10,10 +10,10 @@
 
 	<ul class="links">
 		<li>
-			<a href="/about">About</a>
+			<a href="/contact">Who</a>
 		</li>
 		<li>
-			<a href="/contact">Contact</a>
+			<a href="/about">What</a>
 		</li>
 		<li>
 			<a href="/rss.xml" target="_blank">RSS</a>
