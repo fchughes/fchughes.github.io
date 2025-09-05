@@ -8,7 +8,7 @@
 	import 'open-props/buttons'
 	import '../app.css'
 
-	export let data
+	let { data, children } = $props();
 </script>
 
 <div class="layout">
@@ -16,7 +16,7 @@
 
 	<main>
 		<PageTransition url={data.url}>
-			<slot />
+			{@render children?.()}
 		</PageTransition>
 	</main>
 
