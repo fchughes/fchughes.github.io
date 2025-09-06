@@ -8,18 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@fontsource/jetbrains-mono':
-        specifier: ^5.2.6
-        version: 5.2.6
-      '@fontsource/manrope':
-        specifier: ^5.2.6
-        version: 5.2.6
       '@sveltejs/vite-plugin-svelte':
         specifier: ^6.1.4
         version: 6.1.4(svelte@5.38.6)(vite@7.1.4)
-      lucide-svelte:
-        specifier: ^0.542.0
-        version: 0.542.0(svelte@5.38.6)
       open-props:
         specifier: ^1.7.16
         version: 1.7.16
@@ -277,12 +268,6 @@ packages:
   '@eslint/plugin-kit@0.3.5':
     resolution: {integrity: sha512-Z5kJ+wU3oA7MMIqVR9tyZRtjYPr4OC004Q4Rw7pgOKUOKkJfZ3O24nz3WYfGRpMDNmcOi3TwQOmgm7B7Tpii0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@fontsource/jetbrains-mono@5.2.6':
-    resolution: {integrity: sha512-nz//dBr99hXZmHp10wgNI00qThWImkzRR5PQjvRM+rpmuHO5rYBJCqPPWufidCvmkkryXx/GOP/lgqsM3R3Org==}
-
-  '@fontsource/manrope@5.2.6':
-    resolution: {integrity: sha512-tboCPLGXWWkNORL7gRhA1m16FJj2QuObk2lhBvkNrpjW0911pGawvHwxuierKHojPtXptfMJo7CUWxXGkKN5zA==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -984,11 +969,6 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
-  lucide-svelte@0.542.0:
-    resolution: {integrity: sha512-KxqJycY4EWaGy1zk/7sqEcf48j4YaP9zEujYczzrsw5j9b9b5pjAJ1qGFKZvD7T6xz9reSYAfUAd6Bz62TdqGw==}
-    peerDependencies:
-      svelte: ^3 || ^4 || ^5.0.0-next.42
-
   magic-string@0.30.18:
     resolution: {integrity: sha512-yi8swmWbO17qHhwIBNeeZxTceJMeBvWJaId6dyvTSOwTipqeHhMhOrz6513r1sOKnpvQ7zkhlG8tPrpilwTxHQ==}
 
@@ -1533,10 +1513,6 @@ snapshots:
     dependencies:
       '@eslint/core': 0.15.2
       levn: 0.4.1
-
-  '@fontsource/jetbrains-mono@5.2.6': {}
-
-  '@fontsource/manrope@5.2.6': {}
 
   '@humanfs/core@0.19.1': {}
 
@@ -2261,10 +2237,6 @@ snapshots:
       p-locate: 5.0.0
 
   lodash.merge@4.6.2: {}
-
-  lucide-svelte@0.542.0(svelte@5.38.6):
-    dependencies:
-      svelte: 5.38.6
 
   magic-string@0.30.18:
     dependencies:
