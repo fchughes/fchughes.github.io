@@ -5,16 +5,17 @@ html {
 	/* font */
 	/* --font-sans: 'Manrope', sans-serif; */
 	/* --font-mono: 'JetBrains Mono', monospace; */
+	font-family: "Macondo Swash Caps";
 
 	/* dark */
 	--brand-dark: var(--orange-3);
-	--text-1-dark: var(--gray-3);
+	--text-1-dark: #c7b0a1; /*var(--gray-3);*/
 	--text-2-dark: var(--gray-5);
 	--surface-1-dark: var(--gray-12);
 	--surface-2-dark: var(--gray-11);
 	--surface-3-dark: var(--gray-10);
 	--surface-4-dark: var(--gray-9);
-	--background-dark: var(--gray-10);
+	--background-dark: var(--gray-9);
 	--border-dark: var(--gray-9);
 
 	/* light */
@@ -94,7 +95,7 @@ body {
 
 html {
 	color: var(--text-1);
-	accent-color: var(--link);
+	/* accent-color: var(--link); */
 	background-image: var(--background);
 	background-attachment: fixed;
 }

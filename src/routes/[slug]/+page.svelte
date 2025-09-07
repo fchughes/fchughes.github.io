@@ -12,7 +12,7 @@
 
 <article>
 	<hgroup>
-		<h1>{data.meta.title}</h1>
+		<h1 class="title">{data.meta.title}</h1>
 		<p>{formatDate(data.meta.date)}</p>
 	</hgroup>
 
@@ -42,6 +42,19 @@
 		color: var(--text-2);
 	} */
 
+	.title {
+		display: inline-block;
+		font-size: var(--font-size-fluid-2);
+		line-height: 0;
+	}
+
+	.title::first-letter {
+		font-family: 'Astloch';
+		color:#c06225;
+		font-size: 64px;
+		font-weight: 700;
+	}
+	
 	.tags {
 		display: flex;
 		gap: var(--size-3);

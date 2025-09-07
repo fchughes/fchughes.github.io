@@ -22,7 +22,7 @@
 </section>
 
 <style>
-	.posts {
+	/* .posts {
 		display: grid;
 		gap: var(--size-7);
 	}
@@ -34,18 +34,36 @@
 	.post:not(:last-child) {
 		border-bottom: 1px solid var(--border);
 		padding-bottom: var(--size-7);
-	}
+	} */
 
 	.title {
-		font-size: var(--font-size-fluid-3);
-		text-transform: capitalize;
+		display: inline-block;
+		font-size: var(--font-size-fluid-2);
+		line-height: 0;
+	}
+
+	.title::first-letter {
+		font-family: 'Astloch';
+		color:#c06225;
+		font-size: 64px;
+		font-weight: 700;
 	}
 
 	.date {
 		color: var(--text-2);
+		font-size: small;
+		line-height: 1;
 	}
 
 	.description {
 		margin-top: var(--size-3);
+	}
+
+	a:visited {
+		color: #aea5d4;
+	}
+
+	a:hover {
+		text-decoration: none;
 	}
 </style>
