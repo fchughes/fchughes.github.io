@@ -1,1 +1,0 @@
-import"./DsnmJJEf.js";import{P as e,ah as i,N as m,aj as n,Q as f,ad as p}from"./D4uoq7pJ.js";import{s as o}from"./UB874K8u.js";import{a as c}from"./BwtyyqoZ.js";var l=e('<img loading="lazy"/>');function _(r,t){var a=l();i(()=>{o(a,"src",t.src),o(a,"alt",t.alt)}),m(r,a)}function u(r,t){var a=n(),s=f(a);c(s,()=>t.children??p),m(r,a)}export{_ as I,u as M};
