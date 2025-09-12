@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<link rel="icon" href="https://fav.farm/🌲" />
-		<link rel="alternate" type="application/atom+xml" href="/rss.xml" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
-		
-		<script type="module">
-			const theme = localStorage.getItem('color-scheme')
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link rel="icon" href="https://fav.farm/🌲" />
+	<link rel="alternate" type="application/atom+xml" href="/rss.xml" />
 
-			theme
-				? document.documentElement.setAttribute('color-scheme', theme)
-				: localStorage.setItem('color-scheme', 'dark')
-		</script>
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Macondo+Swash+Caps&display=swap"
+		rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/realglass/RealGlass.standalone.js"></script>
+
+	<script type="module">
+		const theme = localStorage.getItem('color-scheme')
+
+		theme
+			? document.documentElement.setAttribute('color-scheme', theme)
+			: localStorage.setItem('color-scheme', 'dark')
+	</script>
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover" id="body">
+	<!-- <div id="glass_card"  style="left: 0px; top: 0px; width: 100%; height: 100%; background: #dc54544f; z-index: -1; position:absolute;" draggable></div> -->
+
+	<div id="organs" style="display: contents;background-color:transparent;">
+		%sveltekit.body%
+	</div>
+	<div
+		id="svg_container"
+		style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="font-family: &quot;Departure Mono&quot;;">
+			<defs style="font-family: &quot;Departure Mono&quot;;">
+				<filter id="bloomFilter" style="font-family: &quot;Departure Mono&quot;;">
+					<feGaussianBlur stdDeviation="5" in="SourceGraphic" result="blur"
+						style="font-family: &quot;Departure Mono&quot;;"></feGaussianBlur>
+					<feComponentTransfer in="blur" result="brightness" style="font-family: &quot;Departure Mono&quot;;">
+						<feFuncA type="linear" slope="0.6" intercept="0"
+							style="font-family: &quot;Departure Mono&quot;;"></feFuncA>
+					</feComponentTransfer>
+					<feBlend mode="screen" in="SourceGraphic" in2="brightness"
+						style="font-family: &quot;Departure Mono&quot;;"></feBlend>
+				</filter>
+			</defs>
+		</svg>
+	</div>
+</body>
+
 </html>

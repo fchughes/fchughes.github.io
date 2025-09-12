@@ -31,6 +31,7 @@
 	article {
 		max-inline-size: var(--size-content-3);
 		margin-inline: auto;
+		background-color: #000000d6;
 	}
 
 	/* h1 {
@@ -46,15 +47,17 @@
 		display: inline-block;
 		font-size: var(--font-size-fluid-2);
 		line-height: 0;
+		text-transform: uppercase;
+		/* font-style:italic; */
 	}
 
 	.title::first-letter {
-		font-family: 'Astloch';
-		color:#c06225;
-		font-size: 64px;
-		font-weight: 700;
+		/* font-family: 'Astloch';
+		color:#c06225; */
+		/* font-size: 64px;
+		font-weight: 700; */
 	}
-	
+
 	.tags {
 		display: flex;
 		gap: var(--size-3);

@@ -3,12 +3,17 @@
 	import * as config from '$lib/config'
 </script>
 
-<nav>
-	<a href="/" class="title">
+<nav id="nav_header">
+	<!-- <a href="/" class="title">
 		<b>{config.title}</b>
-	</a>
+	</a> -->
 
 	<ul class="links">
+		<li>
+			<a href="/" class="title">
+				<b>{config.title}</b>
+			</a>
+		</li>
 		<li>
 			<a href="/contact">Who</a>
 		</li>
@@ -20,16 +25,20 @@
 		</li>
 	</ul>
 
-	<Toggle />
+	<!-- <Toggle /> -->
 </nav>
 
 <style>
 	nav {
-		padding-block: var(--size-7);
+		/* padding-block: var(--size-7); */
+		justify-self:center;
 	}
 
 	.links {
 		margin-block: var(--size-7);
+		display: flex;
+		justify-items: center;
+		gap: 3rem;
 	}
 
 	a {
@@ -37,16 +46,4 @@
 		text-decoration: none;
 	}
 
-	@media (min-width: 768px) {
-		nav {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.links {
-			display: flex;
-			gap: var(--size-7);
-			margin-block: 0;
-		}
-	}
 </style>

@@ -1,1 +1,1 @@
-forest c hughes at gmail dot com
+forest c hughes @ gmail . com
