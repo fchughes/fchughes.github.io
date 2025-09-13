@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { formatDate } from '$lib/utils'
-
 	let { data } = $props();
 </script>
 
@@ -13,7 +11,7 @@
 <article>
 	<hgroup>
 		<h1 class="title">{data.meta.title}</h1>
-		<p>{formatDate(data.meta.date)}</p>
+		<p>{data.meta.date}</p>
 	</hgroup>
 
 	<div class="tags">

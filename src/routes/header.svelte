@@ -31,7 +31,11 @@
 <style>
 	nav {
 		/* padding-block: var(--size-7); */
-		justify-self:center;
+		/* justify-self:center; */
+		width: 100vw;
+		justify-items: center;
+		justify-content: center;
+		display: flex;
 	}
 
 	.links {
