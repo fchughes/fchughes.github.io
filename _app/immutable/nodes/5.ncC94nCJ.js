@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import"../chunks/rlFEqITl.js";import{w as e,x as a,y as p}from"../chunks/yNq1CIdx.js";function s(t){p();var o=e("forest c hughes @ gmail . com");a(t,o)}export{s as component};

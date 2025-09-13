@@ -1,0 +1,1 @@
+import"./DsnmJJEf.js";import{z as o,D as e,x as i}from"./yNq1CIdx.js";import{s as r}from"./DJECMZyq.js";var s=o('<img loading="lazy"/>');function c(m,a){var t=s();e(()=>{r(t,"src",a.src),r(t,"alt",a.alt)}),i(m,t)}export{c as I};
