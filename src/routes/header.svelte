@@ -39,6 +39,10 @@
 		display: flex;
 		justify-items: center;
 		gap: 3rem;
+		flex-wrap: wrap;
+		overflow-wrap: anywhere;
+		display: flex;
+		row-gap:1rem;
 	}
 
 	a {

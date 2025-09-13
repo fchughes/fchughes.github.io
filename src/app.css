@@ -16,7 +16,7 @@ html {
 	--brand-dark: #cd4848;
 	--text-1-dark: var(--gray-5); /*#c7b0a1; */ /*var(--gray-3);*/
 	--text-2-dark: var(--gray-5);
-	--surface-1-dark: #274360;
+	--surface-1-dark: black; /*#274360;*/
 	--surface-2-dark: var(--gray-11);
 	--surface-3-dark: var(--gray-10);
 	--surface-4-dark: var(--gray-9);
@@ -185,6 +185,13 @@ body::after {
 }
 
 
+main {
+	margin-top: 4rem;
+	max-inline-size: var(--size-content-3);
+	margin-inline: auto;
+}
+
+
 
 html {
 	filter: url(#bloomFilter);
@@ -260,3 +267,16 @@ html {
 	  visibility: hidden;
 	}
   }
+
+  body:before {
+	content: '';
+	background-image: url('/digicross_red.jpeg');
+	background-position: top;
+	filter: hue-rotate(333deg) brightness(0.8);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}

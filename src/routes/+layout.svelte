@@ -11,7 +11,7 @@
 	let { data, children } = $props()
 </script>
 
-<div id="layout" class="layout">
+<!-- <div id="layout" class="layout"> -->
 	<Header />
 
 	<main>
@@ -21,14 +21,15 @@
 	</main>
 
 	<!-- <Footer /> -->
-</div>
+<!-- </div> -->
 
 <style>
 	.layout {
 		height: 100%;
-		max-inline-size: 1440px;
+		width: 100%;
+		/* max-inline-size: 1440px;
 		display: grid;
-		grid-template-rows: auto 1fr auto;
+		grid-template-rows: auto 1fr auto; */
 		margin-inline: 6rem;
 		padding-inline: var(--size-7);
 		background-color: transparent;
@@ -37,7 +38,7 @@
 		filter: hue-rotate(342deg); */
 	}
 
-	.layout:before {
+	/* .layout:before {
 		content: '';
 		background-image: url('/digicross_red.jpeg');
 		background-position: top;
@@ -48,15 +49,15 @@
 		z-index: -1;
 		top: 0;
 		left: 0;
-	}
+	} */
 
-	main {
+	/* main {
 		padding-block: var(--size-9);
-	}
+	} */
 
-	@media (min-width: 1440px) {
+	/* @media (min-width: 1440px) {
 		.layout {
 			padding-inline: 0;
 		}
-	}
+	} */
 </style>
